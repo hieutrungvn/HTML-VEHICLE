@@ -60,4 +60,62 @@ body {
   float: right;
 }
 
+.vehicle-header {
+  background-color: #eefbff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  margin-top: 40px;
+}
+.vehicle-header__text {
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+.vehicle-header__text span {
+  color: #4ca2ff;
+  font-weight: bold;
+}
+.vehicle-header__buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.vehicle-header__buttonGroup button {
+  padding: 8px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  width: 90px;
+  cursor: pointer;
+  border: 1px solid;
+}
+.vehicle-header__buttonGroup button:hover {
+  border: 1px solid #fff;
+}
+.vehicle-header__buttonGroup button i {
+  padding-right: 10px;
+  color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vehicle-header__buttonGroup button {
+    width: 120px;
+    font-size: 13px;
+  }
+}
+.vehicle-header__buttonGroup .BtnAddNew {
+  background-color: #0865c1;
+}
+.vehicle-header__buttonGroup .BtnAddNew:hover {
+  background-color: #173b67;
+}
+.vehicle-header__buttonGroup .BtnDelete {
+  background-color: red;
+}
+.vehicle-header__buttonGroup .BtnDelete:hover {
+  background-color: #173b67;
+}
+
 /*# sourceMappingURL=vehicle.css.map */
